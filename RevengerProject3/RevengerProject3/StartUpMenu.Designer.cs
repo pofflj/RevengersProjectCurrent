@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.player1NameLabel = new System.Windows.Forms.Label();
             this.numericUpDownForPlayers = new System.Windows.Forms.NumericUpDown();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.player2NameLabel = new System.Windows.Forms.Label();
+            this.player3NameLabel = new System.Windows.Forms.Label();
+            this.player4NameLabel = new System.Windows.Forms.Label();
             this.PlayerOneTextBox = new System.Windows.Forms.TextBox();
             this.playerFourTextBox = new System.Windows.Forms.TextBox();
             this.playerThreeTextBox = new System.Windows.Forms.TextBox();
@@ -52,14 +52,14 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Player Amount";
             // 
-            // label2
+            // player1NameLabel
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(157, 222);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(105, 20);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Player 1 Name";
+            this.player1NameLabel.AutoSize = true;
+            this.player1NameLabel.Location = new System.Drawing.Point(157, 222);
+            this.player1NameLabel.Name = "player1NameLabel";
+            this.player1NameLabel.Size = new System.Drawing.Size(105, 20);
+            this.player1NameLabel.TabIndex = 1;
+            this.player1NameLabel.Text = "Player 1 Name";
             // 
             // numericUpDownForPlayers
             // 
@@ -67,34 +67,35 @@
             this.numericUpDownForPlayers.Name = "numericUpDownForPlayers";
             this.numericUpDownForPlayers.Size = new System.Drawing.Size(41, 27);
             this.numericUpDownForPlayers.TabIndex = 2;
+            this.numericUpDownForPlayers.ValueChanged += new System.EventHandler(this.numericUpDownForPlayers_ValueChanged);
             // 
-            // label3
+            // player2NameLabel
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(157, 315);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(105, 20);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "Player 2 Name";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
+            this.player2NameLabel.AutoSize = true;
+            this.player2NameLabel.Location = new System.Drawing.Point(157, 315);
+            this.player2NameLabel.Name = "player2NameLabel";
+            this.player2NameLabel.Size = new System.Drawing.Size(105, 20);
+            this.player2NameLabel.TabIndex = 1;
+            this.player2NameLabel.Text = "Player 2 Name";
+            this.player2NameLabel.Click += new System.EventHandler(this.label3_Click);
             // 
-            // label4
+            // player3NameLabel
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(431, 222);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(105, 20);
-            this.label4.TabIndex = 1;
-            this.label4.Text = "Player 3 Name";
+            this.player3NameLabel.AutoSize = true;
+            this.player3NameLabel.Location = new System.Drawing.Point(431, 222);
+            this.player3NameLabel.Name = "player3NameLabel";
+            this.player3NameLabel.Size = new System.Drawing.Size(105, 20);
+            this.player3NameLabel.TabIndex = 1;
+            this.player3NameLabel.Text = "Player 3 Name";
             // 
-            // label5
+            // player4NameLabel
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(431, 315);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(105, 20);
-            this.label5.TabIndex = 1;
-            this.label5.Text = "Player 4 Name";
+            this.player4NameLabel.AutoSize = true;
+            this.player4NameLabel.Location = new System.Drawing.Point(431, 315);
+            this.player4NameLabel.Name = "player4NameLabel";
+            this.player4NameLabel.Size = new System.Drawing.Size(105, 20);
+            this.player4NameLabel.TabIndex = 1;
+            this.player4NameLabel.Text = "Player 4 Name";
             // 
             // PlayerOneTextBox
             // 
@@ -155,14 +156,15 @@
             this.Controls.Add(this.playerThreeTextBox);
             this.Controls.Add(this.playerFourTextBox);
             this.Controls.Add(this.PlayerOneTextBox);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.player4NameLabel);
+            this.Controls.Add(this.player3NameLabel);
+            this.Controls.Add(this.player2NameLabel);
             this.Controls.Add(this.numericUpDownForPlayers);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.player1NameLabel);
             this.Controls.Add(this.label1);
             this.Name = "StartUpMenu";
             this.Text = "StartUpMenu";
+            this.Load += new System.EventHandler(this.StartUpMenu_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownForPlayers)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -172,10 +174,10 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label player1NameLabel;
         private System.Windows.Forms.NumericUpDown numericUpDownForPlayers;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label player2NameLabel;
+        private System.Windows.Forms.Label player3NameLabel;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox PlayerOneTextBox;
         private System.Windows.Forms.TextBox playerFourTextBox;
@@ -183,5 +185,6 @@
         private System.Windows.Forms.TextBox playerTwoTextBox;
         private System.Windows.Forms.Button startUpMenuReturnButton;
         private System.Windows.Forms.Button startUpMenuStartButton;
+        private System.Windows.Forms.Label player4NameLabel;
     }
 }

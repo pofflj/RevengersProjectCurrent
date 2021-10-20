@@ -17,7 +17,7 @@ namespace RevengerProject3
 
         private void button1_Click(object sender, EventArgs e)
         {
-            this.Close();
+            //this.Close();
             StartUpMenu Menu = new StartUpMenu();
             Menu.Show();
             //this.Close();
@@ -25,7 +25,7 @@ namespace RevengerProject3
 
         private void button2_Click(object sender, EventArgs e)
         {
-            this.Close();
+           // this.Close();
             Rules r = new Rules();
             r.Show();
             //this.Close();

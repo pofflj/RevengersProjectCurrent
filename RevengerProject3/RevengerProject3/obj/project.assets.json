@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\lukep\\source\\repos\\RevengerProject3\\RevengerProject3\\RevengerProject3.csproj",
+      "projectUniqueName": "C:\\Users\\lukep\\Software Engeneering 1\\GitHub\\RevengersProjectCurrent\\RevengerProject3\\RevengerProject3\\RevengerProject3.csproj",
       "projectName": "RevengerProject3",
-      "projectPath": "C:\\Users\\lukep\\source\\repos\\RevengerProject3\\RevengerProject3\\RevengerProject3.csproj",
+      "projectPath": "C:\\Users\\lukep\\Software Engeneering 1\\GitHub\\RevengersProjectCurrent\\RevengerProject3\\RevengerProject3\\RevengerProject3.csproj",
       "packagesPath": "C:\\Users\\lukep\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\lukep\\source\\repos\\RevengerProject3\\RevengerProject3\\obj\\",
+      "outputPath": "C:\\Users\\lukep\\Software Engeneering 1\\GitHub\\RevengersProjectCurrent\\RevengerProject3\\RevengerProject3\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\lukep\\AppData\\Roaming\\NuGet\\NuGet.Config",
