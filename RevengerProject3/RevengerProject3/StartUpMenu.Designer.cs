@@ -46,35 +46,51 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(157, 155);
+            this.label1.Location = new System.Drawing.Point(137, 116);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(106, 20);
+            this.label1.Size = new System.Drawing.Size(86, 15);
             this.label1.TabIndex = 0;
             this.label1.Text = "Player Amount";
             // 
             // player1NameLabel
             // 
             this.player1NameLabel.AutoSize = true;
-            this.player1NameLabel.Location = new System.Drawing.Point(157, 222);
+            this.player1NameLabel.Location = new System.Drawing.Point(137, 166);
             this.player1NameLabel.Name = "player1NameLabel";
-            this.player1NameLabel.Size = new System.Drawing.Size(105, 20);
+            this.player1NameLabel.Size = new System.Drawing.Size(83, 15);
             this.player1NameLabel.TabIndex = 1;
             this.player1NameLabel.Text = "Player 1 Name";
             // 
             // numericUpDownForPlayers
             // 
-            this.numericUpDownForPlayers.Location = new System.Drawing.Point(279, 148);
+            this.numericUpDownForPlayers.Location = new System.Drawing.Point(244, 111);
+            this.numericUpDownForPlayers.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.numericUpDownForPlayers.Maximum = new decimal(new int[] {
+            4,
+            0,
+            0,
+            0});
+            this.numericUpDownForPlayers.Minimum = new decimal(new int[] {
+            2,
+            0,
+            0,
+            0});
             this.numericUpDownForPlayers.Name = "numericUpDownForPlayers";
-            this.numericUpDownForPlayers.Size = new System.Drawing.Size(41, 27);
+            this.numericUpDownForPlayers.Size = new System.Drawing.Size(36, 23);
             this.numericUpDownForPlayers.TabIndex = 2;
+            this.numericUpDownForPlayers.Value = new decimal(new int[] {
+            2,
+            0,
+            0,
+            0});
             this.numericUpDownForPlayers.ValueChanged += new System.EventHandler(this.numericUpDownForPlayers_ValueChanged);
             // 
             // player2NameLabel
             // 
             this.player2NameLabel.AutoSize = true;
-            this.player2NameLabel.Location = new System.Drawing.Point(157, 315);
+            this.player2NameLabel.Location = new System.Drawing.Point(137, 236);
             this.player2NameLabel.Name = "player2NameLabel";
-            this.player2NameLabel.Size = new System.Drawing.Size(105, 20);
+            this.player2NameLabel.Size = new System.Drawing.Size(83, 15);
             this.player2NameLabel.TabIndex = 1;
             this.player2NameLabel.Text = "Player 2 Name";
             this.player2NameLabel.Click += new System.EventHandler(this.label3_Click);
@@ -82,54 +98,59 @@
             // player3NameLabel
             // 
             this.player3NameLabel.AutoSize = true;
-            this.player3NameLabel.Location = new System.Drawing.Point(431, 222);
+            this.player3NameLabel.Location = new System.Drawing.Point(377, 166);
             this.player3NameLabel.Name = "player3NameLabel";
-            this.player3NameLabel.Size = new System.Drawing.Size(105, 20);
+            this.player3NameLabel.Size = new System.Drawing.Size(83, 15);
             this.player3NameLabel.TabIndex = 1;
             this.player3NameLabel.Text = "Player 3 Name";
             // 
             // player4NameLabel
             // 
             this.player4NameLabel.AutoSize = true;
-            this.player4NameLabel.Location = new System.Drawing.Point(431, 315);
+            this.player4NameLabel.Location = new System.Drawing.Point(377, 236);
             this.player4NameLabel.Name = "player4NameLabel";
-            this.player4NameLabel.Size = new System.Drawing.Size(105, 20);
+            this.player4NameLabel.Size = new System.Drawing.Size(83, 15);
             this.player4NameLabel.TabIndex = 1;
             this.player4NameLabel.Text = "Player 4 Name";
             // 
             // PlayerOneTextBox
             // 
-            this.PlayerOneTextBox.Location = new System.Drawing.Point(268, 215);
+            this.PlayerOneTextBox.Location = new System.Drawing.Point(234, 161);
+            this.PlayerOneTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.PlayerOneTextBox.Name = "PlayerOneTextBox";
-            this.PlayerOneTextBox.Size = new System.Drawing.Size(125, 27);
+            this.PlayerOneTextBox.Size = new System.Drawing.Size(110, 23);
             this.PlayerOneTextBox.TabIndex = 3;
             // 
             // playerFourTextBox
             // 
-            this.playerFourTextBox.Location = new System.Drawing.Point(556, 308);
+            this.playerFourTextBox.Location = new System.Drawing.Point(486, 231);
+            this.playerFourTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.playerFourTextBox.Name = "playerFourTextBox";
-            this.playerFourTextBox.Size = new System.Drawing.Size(125, 27);
+            this.playerFourTextBox.Size = new System.Drawing.Size(110, 23);
             this.playerFourTextBox.TabIndex = 3;
             // 
             // playerThreeTextBox
             // 
-            this.playerThreeTextBox.Location = new System.Drawing.Point(556, 215);
+            this.playerThreeTextBox.Location = new System.Drawing.Point(486, 161);
+            this.playerThreeTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.playerThreeTextBox.Name = "playerThreeTextBox";
-            this.playerThreeTextBox.Size = new System.Drawing.Size(125, 27);
+            this.playerThreeTextBox.Size = new System.Drawing.Size(110, 23);
             this.playerThreeTextBox.TabIndex = 3;
             // 
             // playerTwoTextBox
             // 
-            this.playerTwoTextBox.Location = new System.Drawing.Point(268, 308);
+            this.playerTwoTextBox.Location = new System.Drawing.Point(234, 231);
+            this.playerTwoTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.playerTwoTextBox.Name = "playerTwoTextBox";
-            this.playerTwoTextBox.Size = new System.Drawing.Size(125, 27);
+            this.playerTwoTextBox.Size = new System.Drawing.Size(110, 23);
             this.playerTwoTextBox.TabIndex = 3;
             // 
             // startUpMenuReturnButton
             // 
-            this.startUpMenuReturnButton.Location = new System.Drawing.Point(268, 407);
+            this.startUpMenuReturnButton.Location = new System.Drawing.Point(234, 305);
+            this.startUpMenuReturnButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.startUpMenuReturnButton.Name = "startUpMenuReturnButton";
-            this.startUpMenuReturnButton.Size = new System.Drawing.Size(94, 29);
+            this.startUpMenuReturnButton.Size = new System.Drawing.Size(82, 22);
             this.startUpMenuReturnButton.TabIndex = 4;
             this.startUpMenuReturnButton.Text = "Return";
             this.startUpMenuReturnButton.UseVisualStyleBackColor = true;
@@ -137,9 +158,10 @@
             // 
             // startUpMenuStartButton
             // 
-            this.startUpMenuStartButton.Location = new System.Drawing.Point(556, 407);
+            this.startUpMenuStartButton.Location = new System.Drawing.Point(486, 305);
+            this.startUpMenuStartButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.startUpMenuStartButton.Name = "startUpMenuStartButton";
-            this.startUpMenuStartButton.Size = new System.Drawing.Size(94, 29);
+            this.startUpMenuStartButton.Size = new System.Drawing.Size(82, 22);
             this.startUpMenuStartButton.TabIndex = 5;
             this.startUpMenuStartButton.Text = "Start Game";
             this.startUpMenuStartButton.UseVisualStyleBackColor = true;
@@ -147,9 +169,9 @@
             // 
             // StartUpMenu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(838, 497);
+            this.ClientSize = new System.Drawing.Size(733, 373);
             this.Controls.Add(this.startUpMenuStartButton);
             this.Controls.Add(this.startUpMenuReturnButton);
             this.Controls.Add(this.playerTwoTextBox);
@@ -162,6 +184,7 @@
             this.Controls.Add(this.numericUpDownForPlayers);
             this.Controls.Add(this.player1NameLabel);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "StartUpMenu";
             this.Text = "StartUpMenu";
             this.Load += new System.EventHandler(this.StartUpMenu_Load);
