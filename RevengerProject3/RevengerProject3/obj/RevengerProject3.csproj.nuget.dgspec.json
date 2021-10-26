@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\lukep\\Software Engeneering 1\\GitHub\\RevengersProjectCurrent\\RevengerProject3\\RevengerProject3\\RevengerProject3.csproj": {}
+    "C:\\Users\\Logan\\Documents\\GitHub\\RevengersProjectCurrent\\RevengerProject3\\RevengerProject3\\RevengerProject3.csproj": {}
   },
   "projects": {
-    "C:\\Users\\lukep\\Software Engeneering 1\\GitHub\\RevengersProjectCurrent\\RevengerProject3\\RevengerProject3\\RevengerProject3.csproj": {
+    "C:\\Users\\Logan\\Documents\\GitHub\\RevengersProjectCurrent\\RevengerProject3\\RevengerProject3\\RevengerProject3.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lukep\\Software Engeneering 1\\GitHub\\RevengersProjectCurrent\\RevengerProject3\\RevengerProject3\\RevengerProject3.csproj",
+        "projectUniqueName": "C:\\Users\\Logan\\Documents\\GitHub\\RevengersProjectCurrent\\RevengerProject3\\RevengerProject3\\RevengerProject3.csproj",
         "projectName": "RevengerProject3",
-        "projectPath": "C:\\Users\\lukep\\Software Engeneering 1\\GitHub\\RevengersProjectCurrent\\RevengerProject3\\RevengerProject3\\RevengerProject3.csproj",
-        "packagesPath": "C:\\Users\\lukep\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lukep\\Software Engeneering 1\\GitHub\\RevengersProjectCurrent\\RevengerProject3\\RevengerProject3\\obj\\",
+        "projectPath": "C:\\Users\\Logan\\Documents\\GitHub\\RevengersProjectCurrent\\RevengerProject3\\RevengerProject3\\RevengerProject3.csproj",
+        "packagesPath": "C:\\Users\\Logan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Logan\\Documents\\GitHub\\RevengersProjectCurrent\\RevengerProject3\\RevengerProject3\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\lukep\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Logan\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,6 +26,7 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
             "projectReferences": {}
           }
         },
@@ -37,6 +38,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "imports": [
             "net461",
             "net462",
@@ -47,6 +49,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[3.1.14, 3.1.14]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
@@ -55,7 +63,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }

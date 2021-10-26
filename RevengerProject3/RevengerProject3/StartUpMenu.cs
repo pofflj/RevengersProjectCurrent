@@ -9,10 +9,10 @@ using System.Windows.Forms;
 
 namespace RevengerProject3
 {
-    
+
     public partial class StartUpMenu : Form
     {
-        
+
         public StartUpMenu()
         {
             InitializeComponent();
@@ -25,34 +25,30 @@ namespace RevengerProject3
 
         private void button2_Click(object sender, EventArgs e)
         {
-            //this.Hide();
+            this.Hide();
             Board boardgame = new Board();
+            boardgame.FormClosed += (s, args) => this.Close();
             boardgame.Show();
-            //this.Close();
-            
+
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            //this.Hide();
+            this.Hide();
             InitialScreen iScreen = new InitialScreen();
+            iScreen.FormClosed += (s, args) => this.Close();
             iScreen.Show();
-            //this.Close();
         }
-        
-           
+
+
         private void numericUpDownForPlayers_ValueChanged(object sender, EventArgs e)
         {
-            //numericUpDownForPlayers.UpButton();
+            player3NameLabel.Hide();
+            playerThreeTextBox.Hide();
+            player4NameLabel.Hide();
+            playerFourTextBox.Hide();
 
-            //numericUpDownForPlayers.Value = 0;
-            
-            if(numericUpDownForPlayers.Value == 1)
-            {
-                player1NameLabel.Show();
-                PlayerOneTextBox.Show();
-            }
-            if(numericUpDownForPlayers.Value == 2)
+            if (numericUpDownForPlayers.Value == 2)
             {
                 player1NameLabel.Show();
                 PlayerOneTextBox.Show();
@@ -84,13 +80,9 @@ namespace RevengerProject3
         private void StartUpMenu_Load(object sender, EventArgs e)
         {
             //Hide text boxes in start up menu when loaded
-            PlayerOneTextBox.Hide();
-            playerTwoTextBox.Hide();
             playerThreeTextBox.Hide();
             playerFourTextBox.Hide();
             // Hide Labels in start up menu when loaded
-            player1NameLabel.Hide();
-            player2NameLabel.Hide();
             player3NameLabel.Hide();
             player4NameLabel.Hide();
         }
