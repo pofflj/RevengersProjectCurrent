@@ -10,6 +10,13 @@ namespace RevengerProject3
 {
     public partial class Board : Form
     {
+        int ResearchLabSpotsAvailable = 5;
+        int BreakRoomSpotsAvailable = 5;
+        int GroupConferenceSpotsAvailable = 5;
+        int GuestPresentationSpotsAvailable = 5;
+        int PeerProgrammingSpotsAvailable = 5;
+        int ArchivesSpotsAvailable = 5;
+
         public Board()
         {
             InitializeComponent();
@@ -17,6 +24,12 @@ namespace RevengerProject3
 
         private void Board_Load(object sender, EventArgs e)
         {
+            ResearchLabSpotsLabel.Text = ResearchLabSpotsAvailable.ToString();
+            BreakRoomSpotsLabel.Text = BreakRoomSpotsAvailable.ToString();
+            GroupConferenceSpotsLabel.Text = GroupConferenceSpotsAvailable.ToString();
+            GuestPresentationSpotsLabel.Text = GuestPresentationSpotsAvailable.ToString();
+            PeerProgrammingSpotsLabel.Text = PeerProgrammingSpotsAvailable.ToString();
+            ArchivesSpotsLabel.Text = ArchivesSpotsAvailable.ToString();
             //BackgroundImage = System.Drawing.Image.FromFile("C:/Users/lukep/Software Engeneering 1/BoardForOffice.png");
             //this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
         }
@@ -44,5 +57,82 @@ namespace RevengerProject3
             */
         }
 
+        private void ResearchLabPlace_Click(object sender, EventArgs e)
+        {
+            ResearchLabSpotsAvailable--;
+            ResearchLabSpotsLabel.Text = ResearchLabSpotsAvailable.ToString();
+            GuestPresentationPlace.Enabled = false;
+            BreakRoomPlace.Enabled = false;
+            GroupConferencePlace.Enabled = false;
+            PeerProgrammingPlace.Enabled = false;
+            ArchivesPlace.Enabled = false;
+            if (ResearchLabSpotsAvailable == 0)
+                ResearchLabPlace.Enabled = false;
+        }
+
+        private void BreakRoomPlace_Click(object sender, EventArgs e)
+        {
+            BreakRoomSpotsAvailable--;
+            BreakRoomSpotsLabel.Text = BreakRoomSpotsAvailable.ToString();
+            ResearchLabPlace.Enabled = false;
+            GuestPresentationPlace.Enabled = false;
+            GroupConferencePlace.Enabled = false;
+            PeerProgrammingPlace.Enabled = false;
+            ArchivesPlace.Enabled = false;
+            if (BreakRoomSpotsAvailable == 0)
+                BreakRoomPlace.Enabled = false;
+        }
+
+        private void GroupConferencePlace_Click(object sender, EventArgs e)
+        {
+            GroupConferenceSpotsAvailable--;
+            GroupConferenceSpotsLabel.Text = GroupConferenceSpotsAvailable.ToString();
+            ResearchLabPlace.Enabled = false;
+            GuestPresentationPlace.Enabled = false;
+            BreakRoomPlace.Enabled = false;
+            PeerProgrammingPlace.Enabled = false;
+            ArchivesPlace.Enabled = false;
+            if (GroupConferenceSpotsAvailable == 0)
+                GroupConferencePlace.Enabled = false;
+        }
+
+        private void GuestPresentationPlace_Click(object sender, EventArgs e)
+        {
+            GuestPresentationSpotsAvailable--;
+            GuestPresentationSpotsLabel.Text = GuestPresentationSpotsAvailable.ToString();
+            ResearchLabPlace.Enabled = false;
+            GroupConferencePlace.Enabled = false;
+            BreakRoomPlace.Enabled = false;
+            PeerProgrammingPlace.Enabled = false;
+            ArchivesPlace.Enabled = false;
+            if (GuestPresentationSpotsAvailable == 0)
+                GuestPresentationPlace.Enabled = false;
+        }
+
+        private void PeerProgrammingPlace_Click(object sender, EventArgs e)
+        {
+            PeerProgrammingSpotsAvailable--;
+            PeerProgrammingSpotsLabel.Text = PeerProgrammingSpotsAvailable.ToString();
+            ResearchLabPlace.Enabled = false;
+            GroupConferencePlace.Enabled = false;
+            BreakRoomPlace.Enabled = false;
+            GuestPresentationPlace.Enabled = false;
+            ArchivesPlace.Enabled = false;
+            if (PeerProgrammingSpotsAvailable == 0)
+                PeerProgrammingPlace.Enabled = false;
+        }
+
+        private void ArchivesPlace_Click(object sender, EventArgs e)
+        {
+            ArchivesSpotsAvailable--;
+            ArchivesSpotsLabel.Text = ArchivesSpotsAvailable.ToString();
+            ResearchLabPlace.Enabled = false;
+            GroupConferencePlace.Enabled = false;
+            BreakRoomPlace.Enabled = false;
+            GuestPresentationPlace.Enabled = false;
+            PeerProgrammingPlace.Enabled = false;
+            if (ArchivesSpotsAvailable == 0)
+                ArchivesPlace.Enabled = false;
+        }
     }
 }
