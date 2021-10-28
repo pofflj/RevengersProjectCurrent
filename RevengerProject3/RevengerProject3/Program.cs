@@ -8,6 +8,7 @@ namespace RevengerProject3
 {
     static class Program
     {
+        public static Controller c = new Controller();
         /// <summary>
         ///  The main entry point for the application.
         /// </summary>

@@ -12,7 +12,6 @@ namespace RevengerProject3
 
     public partial class StartUpMenu : Form
     {
-
         public StartUpMenu()
         {
             InitializeComponent();
@@ -30,6 +29,30 @@ namespace RevengerProject3
             boardgame.FormClosed += (s, args) => this.Close();
             boardgame.Show();
 
+            if (numericUpDownForPlayers.Value == 2)
+            {
+                Program.c.NumberOfPlayers = 2;
+                Program.c.player1 = new Player(PlayerOneTextBox.Text);
+                Program.c.player2 = new Player(playerTwoTextBox.Text);
+                Program.c.player1.control = true;
+            }
+            else if (numericUpDownForPlayers.Value == 3)
+            {
+                Program.c.NumberOfPlayers = 3;
+                Program.c.player1 = new Player(PlayerOneTextBox.Text);
+                Program.c.player2 = new Player(playerTwoTextBox.Text);
+                Program.c.player3 = new Player(playerThreeTextBox.Text);
+                Program.c.player1.control = true;
+            }
+            else if (numericUpDownForPlayers.Value == 4)
+            {
+                Program.c.NumberOfPlayers = 4;
+                Program.c.player1 = new Player(PlayerOneTextBox.Text);
+                Program.c.player2 = new Player(playerTwoTextBox.Text);
+                Program.c.player3 = new Player(playerThreeTextBox.Text);
+                Program.c.player4 = new Player(playerFourTextBox.Text);
+                Program.c.player1.control = true;
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)

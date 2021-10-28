@@ -24,6 +24,7 @@ namespace RevengerProject3
 
         private void Board_Load(object sender, EventArgs e)
         {
+
             ResearchLabSpotsLabel.Text = ResearchLabSpotsAvailable.ToString();
             BreakRoomSpotsLabel.Text = BreakRoomSpotsAvailable.ToString();
             GroupConferenceSpotsLabel.Text = GroupConferenceSpotsAvailable.ToString();
@@ -133,6 +134,27 @@ namespace RevengerProject3
             PeerProgrammingPlace.Enabled = false;
             if (ArchivesSpotsAvailable == 0)
                 ArchivesPlace.Enabled = false;
+        }
+
+        private void EndPlacement_Click(object sender, EventArgs e)
+        {
+            Program.c.ChangeControl();
+            if (Program.c.player1.control)
+            {
+                PlayerControlLabel.Text = "Player 1 can place";
+            }
+            else if (Program.c.player2.control)
+            {
+                PlayerControlLabel.Text = "Player 2 can place";
+            }
+            else if (Program.c.player3.control)
+            {
+                PlayerControlLabel.Text = "Player 3 can place";
+            }
+            else if (Program.c.player4.control)
+            {
+                PlayerControlLabel.Text = "Player 4 can place";
+            }
         }
     }
 }

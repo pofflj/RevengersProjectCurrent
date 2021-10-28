@@ -47,6 +47,8 @@
             this.PeerProgrammingSpotsLabel = new System.Windows.Forms.Label();
             this.GroupConferenceSpotsLabel = new System.Windows.Forms.Label();
             this.ArchivesSpotsLabel = new System.Windows.Forms.Label();
+            this.PlayerControlLabel = new System.Windows.Forms.Label();
+            this.EndPlacement = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -219,6 +221,25 @@
             this.ArchivesSpotsLabel.TabIndex = 18;
             this.ArchivesSpotsLabel.Text = "0";
             // 
+            // PlayerControlLabel
+            // 
+            this.PlayerControlLabel.AutoSize = true;
+            this.PlayerControlLabel.Location = new System.Drawing.Point(349, 9);
+            this.PlayerControlLabel.Name = "PlayerControlLabel";
+            this.PlayerControlLabel.Size = new System.Drawing.Size(101, 15);
+            this.PlayerControlLabel.TabIndex = 19;
+            this.PlayerControlLabel.Text = "Player 1 can place";
+            // 
+            // EndPlacement
+            // 
+            this.EndPlacement.Location = new System.Drawing.Point(764, 372);
+            this.EndPlacement.Name = "EndPlacement";
+            this.EndPlacement.Size = new System.Drawing.Size(75, 23);
+            this.EndPlacement.TabIndex = 20;
+            this.EndPlacement.Text = "Done";
+            this.EndPlacement.UseVisualStyleBackColor = true;
+            this.EndPlacement.Click += new System.EventHandler(this.EndPlacement_Click);
+            // 
             // Board
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -226,6 +247,8 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(877, 428);
+            this.Controls.Add(this.EndPlacement);
+            this.Controls.Add(this.PlayerControlLabel);
             this.Controls.Add(this.ArchivesSpotsLabel);
             this.Controls.Add(this.GroupConferenceSpotsLabel);
             this.Controls.Add(this.PeerProgrammingSpotsLabel);
@@ -273,5 +296,7 @@
         private System.Windows.Forms.Label PeerProgrammingSpotsLabel;
         private System.Windows.Forms.Label GroupConferenceSpotsLabel;
         private System.Windows.Forms.Label ArchivesSpotsLabel;
+        private System.Windows.Forms.Label PlayerControlLabel;
+        private System.Windows.Forms.Button EndPlacement;
     }
 }
