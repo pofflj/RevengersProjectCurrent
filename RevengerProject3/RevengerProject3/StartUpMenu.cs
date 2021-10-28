@@ -25,9 +25,6 @@ namespace RevengerProject3
         private void button2_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Board boardgame = new Board();
-            boardgame.FormClosed += (s, args) => this.Close();
-            boardgame.Show();
 
             if (numericUpDownForPlayers.Value == 2)
             {
@@ -53,6 +50,10 @@ namespace RevengerProject3
                 Program.c.player4 = new Player(playerFourTextBox.Text);
                 Program.c.player1.control = true;
             }
+
+            Board boardgame = new Board();
+            boardgame.FormClosed += (s, args) => this.Close();
+            boardgame.Show();
         }
 
         private void button1_Click(object sender, EventArgs e)

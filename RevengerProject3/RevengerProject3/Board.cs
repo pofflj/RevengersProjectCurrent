@@ -24,13 +24,13 @@ namespace RevengerProject3
 
         private void Board_Load(object sender, EventArgs e)
         {
-
             ResearchLabSpotsLabel.Text = ResearchLabSpotsAvailable.ToString();
             BreakRoomSpotsLabel.Text = BreakRoomSpotsAvailable.ToString();
             GroupConferenceSpotsLabel.Text = GroupConferenceSpotsAvailable.ToString();
             GuestPresentationSpotsLabel.Text = GuestPresentationSpotsAvailable.ToString();
             PeerProgrammingSpotsLabel.Text = PeerProgrammingSpotsAvailable.ToString();
             ArchivesSpotsLabel.Text = ArchivesSpotsAvailable.ToString();
+            PlayerControlLabel.Text = Program.c.player1.Name.ToString() + " can place";
             //BackgroundImage = System.Drawing.Image.FromFile("C:/Users/lukep/Software Engeneering 1/BoardForOffice.png");
             //this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
         }
@@ -141,19 +141,19 @@ namespace RevengerProject3
             Program.c.ChangeControl();
             if (Program.c.player1.control)
             {
-                PlayerControlLabel.Text = "Player 1 can place";
+                PlayerControlLabel.Text = Program.c.player1.Name.ToString()+" can place";
             }
             else if (Program.c.player2.control)
             {
-                PlayerControlLabel.Text = "Player 2 can place";
+                PlayerControlLabel.Text = Program.c.player2.Name.ToString() + " can place";
             }
             else if (Program.c.player3.control)
             {
-                PlayerControlLabel.Text = "Player 3 can place";
+                PlayerControlLabel.Text = Program.c.player3.Name.ToString() + " can place";
             }
             else if (Program.c.player4.control)
             {
-                PlayerControlLabel.Text = "Player 4 can place";
+                PlayerControlLabel.Text = Program.c.player4.Name.ToString() + " can place";
             }
         }
     }
