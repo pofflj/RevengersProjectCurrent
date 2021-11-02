@@ -14,5 +14,12 @@ namespace RevengerProject3
         {
             InitializeComponent();
         }
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
+            InitialScreen iScreen = new InitialScreen();
+            iScreen.FormClosed += (s, args) => this.Close();
+            iScreen.Show();
+        }
     }
 }

@@ -17,18 +17,19 @@ namespace RevengerProject3
 
         private void button1_Click(object sender, EventArgs e)
         {
-            //this.Close();
+            this.Hide();
             StartUpMenu Menu = new StartUpMenu();
+            Menu.Closed += (s, args) => this.Close();
             Menu.Show();
             //this.Close();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-           // this.Close();
+            this.Hide();
             Rules r = new Rules();
+            r.FormClosed += (s, args) => this.Close();
             r.Show();
-            //this.Close();
         }
 
         private void button3_Click(object sender, EventArgs e)

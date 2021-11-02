@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "lj7InbIgZIiKy19xrycHD92tAm78QM7Qcp3diSs15kbW9DS+URVkpzgVQSHbCKusMapqW4EzgWIgRlAbIdoAHw==",
+  "dgSpecHash": "Fh1/ftAUn3GJ0pbtBCOwuvPXwJqbsxdfTbzlHcxIjX0iyLRf87SHcBx4mI8qLdGKm2LOLNF5kd0PmDtstaopiw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\lukep\\Software Engeneering 1\\GitHub\\RevengersProjectCurrent\\RevengerProject3\\RevengerProject3\\RevengerProject3.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\Logan\\Documents\\GitHub\\RevengersProjectCurrent\\RevengerProject3\\RevengerProject3\\RevengerProject3.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Logan\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.14\\microsoft.netcore.app.host.win-x64.3.1.14.nupkg.sha512"
+  ],
   "logs": []
 }

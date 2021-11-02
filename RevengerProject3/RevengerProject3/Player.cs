@@ -12,7 +12,7 @@ namespace RevengerProject3
 
         public Player(string name)
         {
-            Name = name;            
+            Name = name;
         }
     }
 }
