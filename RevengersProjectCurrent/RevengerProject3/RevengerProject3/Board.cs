@@ -31,8 +31,9 @@ namespace RevengerProject3
             PeerProgrammingSpotsLabel.Text = PeerProgrammingSpotsAvailable.ToString();
             ArchivesSpotsLabel.Text = ArchivesSpotsAvailable.ToString();
             PlayerControlLabel.Text = Program.c.player1.Name.ToString() + " can place";
-            //BackgroundImage = System.Drawing.Image.FromFile("C:/Users/lukep/Software Engeneering 1/BoardForOffice.png");
-            //this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            BackgroundImage = System.Drawing.Image.FromFile("C:/Users/lukep/Software Engeneering 1/GitHub/RevengersProjectCurrent/RevengersProjectCurrent/RevengerProject3/RevengerProject3/Resources/Board.jpg");
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -156,5 +157,76 @@ namespace RevengerProject3
                 PlayerControlLabel.Text = Program.c.player4.Name.ToString() + " can place";
             }
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+            Random rand = new Random();
+            int diceRoll = rand.Next(1, 7);
+            int diceRoll2 = rand.Next(1, 7);
+            int diceRollTotal = diceRoll + diceRoll2;
+            diceTotalLabel.Text = Convert.ToString("Total:  " + diceRollTotal);
+
+
+
+            switch (diceRoll)
+            {
+                case 1:
+
+                    diceOnePicture.ImageLocation = @"C:\Users\lukep\Software Engeneering 1\GitHub\RevengersProjectCurrent\RevengersProjectCurrent\RevengerProject3\RevengerProject3\Resources\DiceRollOnee.JPG";
+                    diceOnePicture.SizeMode = PictureBoxSizeMode.StretchImage;
+                    break;
+                case 2:
+                    diceOnePicture.ImageLocation = @"C:\Users\lukep\Software Engeneering 1\GitHub\RevengersProjectCurrent\RevengersProjectCurrent\RevengerProject3\RevengerProject3\Resources\DiceRollTwo.JPG";
+                    diceOnePicture.SizeMode = PictureBoxSizeMode.StretchImage;
+                    break;
+                case 3:
+                    diceOnePicture.ImageLocation = @"C:\Users\lukep\Software Engeneering 1\GitHub\RevengersProjectCurrent\RevengersProjectCurrent\RevengerProject3\RevengerProject3\Resources\DiceRollThree.JPG";
+                    diceOnePicture.SizeMode = PictureBoxSizeMode.StretchImage;
+                    break;
+                case 4:
+                    diceOnePicture.ImageLocation = @"C:\Users\lukep\Software Engeneering 1\GitHub\RevengersProjectCurrent\RevengersProjectCurrent\RevengerProject3\RevengerProject3\Resources\DiceRollFour.JPG";
+                    diceOnePicture.SizeMode = PictureBoxSizeMode.StretchImage;
+                    break;
+                case 5:
+                    diceOnePicture.ImageLocation = @"C:\Users\lukep\Software Engeneering 1\GitHub\RevengersProjectCurrent\RevengersProjectCurrent\RevengerProject3\RevengerProject3\Resources\DiceRollFive.JPG";
+                    diceOnePicture.SizeMode = PictureBoxSizeMode.StretchImage;
+                    break;
+                case 6:
+                    diceOnePicture.ImageLocation = @"C:\Users\lukep\Software Engeneering 1\GitHub\RevengersProjectCurrent\RevengersProjectCurrent\RevengerProject3\RevengerProject3\Resources\DiceRollSix.JPG";
+                    diceOnePicture.SizeMode = PictureBoxSizeMode.StretchImage;
+                    break;
+            }
+            switch (diceRoll2)
+            {
+                case 1:
+
+                    diceTwoPicture.ImageLocation = @"C:\Users\lukep\Software Engeneering 1\GitHub\RevengersProjectCurrent\RevengersProjectCurrent\RevengerProject3\RevengerProject3\Resources\DiceRollOnee.JPG";
+                    diceTwoPicture.SizeMode = PictureBoxSizeMode.StretchImage;
+                    break;
+                case 2:
+                    diceTwoPicture.ImageLocation = @"C:\Users\lukep\Software Engeneering 1\GitHub\RevengersProjectCurrent\RevengersProjectCurrent\RevengerProject3\RevengerProject3\Resources\DiceRollTwo.JPG";
+                    diceTwoPicture.SizeMode = PictureBoxSizeMode.StretchImage;
+                    break;
+                case 3:
+                    diceTwoPicture.ImageLocation = @"C:\Users\lukep\Software Engeneering 1\GitHub\RevengersProjectCurrent\RevengersProjectCurrent\RevengerProject3\RevengerProject3\Resources\DiceRollThree.JPG";
+                    diceTwoPicture.SizeMode = PictureBoxSizeMode.StretchImage;
+                    break;
+                case 4:
+                    diceTwoPicture.ImageLocation = @"C:\Users\lukep\Software Engeneering 1\GitHub\RevengersProjectCurrent\RevengersProjectCurrent\RevengerProject3\RevengerProject3\Resources\DiceRollFour.JPG";
+                    diceTwoPicture.SizeMode = PictureBoxSizeMode.StretchImage;
+                    break;
+                case 5:
+                    diceTwoPicture.ImageLocation = @"C:\Users\lukep\Software Engeneering 1\GitHub\RevengersProjectCurrent\RevengersProjectCurrent\RevengerProject3\RevengerProject3\Resources\DiceRollFive.JPG";
+                    diceTwoPicture.SizeMode = PictureBoxSizeMode.StretchImage;
+                    break;
+                case 6:
+                    diceTwoPicture.ImageLocation = @"C:\Users\lukep\Software Engeneering 1\GitHub\RevengersProjectCurrent\RevengersProjectCurrent\RevengerProject3\RevengerProject3\Resources\DiceRollSix.JPG";
+                    diceTwoPicture.SizeMode = PictureBoxSizeMode.StretchImage;
+                    break;
+            }
+           
+        }
+        
     }
 }
