@@ -61,6 +61,22 @@ namespace RevengerProject3
         private void ResearchLabPlace_Click(object sender, EventArgs e)
         {
             ResearchLabSpotsAvailable--;
+            if (Program.c.player1.control)
+            {
+                Program.c.player1.WorkersAtResearchLab++;
+            }
+            else if (Program.c.player2.control)
+            {
+                Program.c.player2.WorkersAtResearchLab++;
+            }
+            else if (Program.c.player3.control)
+            {
+                Program.c.player3.WorkersAtResearchLab++;
+            }
+            else if (Program.c.player4.control)
+            {
+                Program.c.player4.WorkersAtResearchLab++;
+            }
             ResearchLabSpotsLabel.Text = ResearchLabSpotsAvailable.ToString();
             GuestPresentationPlace.Enabled = false;
             BreakRoomPlace.Enabled = false;
@@ -74,6 +90,22 @@ namespace RevengerProject3
         private void BreakRoomPlace_Click(object sender, EventArgs e)
         {
             BreakRoomSpotsAvailable--;
+            if (Program.c.player1.control)
+            {
+                Program.c.player1.WorkersAtBreakRoom++;
+            }
+            else if (Program.c.player2.control)
+            {
+                Program.c.player2.WorkersAtBreakRoom++;
+            }
+            else if (Program.c.player3.control)
+            {
+                Program.c.player3.WorkersAtBreakRoom++;
+            }
+            else if (Program.c.player4.control)
+            {
+                Program.c.player4.WorkersAtBreakRoom++;
+            }
             BreakRoomSpotsLabel.Text = BreakRoomSpotsAvailable.ToString();
             ResearchLabPlace.Enabled = false;
             GuestPresentationPlace.Enabled = false;
@@ -87,6 +119,22 @@ namespace RevengerProject3
         private void GroupConferencePlace_Click(object sender, EventArgs e)
         {
             GroupConferenceSpotsAvailable--;
+            if (Program.c.player1.control)
+            {
+                Program.c.player1.WorkersAtGroupConference++;
+            }
+            else if (Program.c.player2.control)
+            {
+                Program.c.player2.WorkersAtGroupConference++;
+            }
+            else if (Program.c.player3.control)
+            {
+                Program.c.player3.WorkersAtGroupConference++;
+            }
+            else if (Program.c.player4.control)
+            {
+                Program.c.player4.WorkersAtGroupConference++;
+            }
             GroupConferenceSpotsLabel.Text = GroupConferenceSpotsAvailable.ToString();
             ResearchLabPlace.Enabled = false;
             GuestPresentationPlace.Enabled = false;
@@ -100,6 +148,22 @@ namespace RevengerProject3
         private void GuestPresentationPlace_Click(object sender, EventArgs e)
         {
             GuestPresentationSpotsAvailable--;
+            if (Program.c.player1.control)
+            {
+                Program.c.player1.WorkersAtGuestPresentation++;
+            }
+            else if (Program.c.player2.control)
+            {
+                Program.c.player2.WorkersAtGuestPresentation++;
+            }
+            else if (Program.c.player3.control)
+            {
+                Program.c.player3.WorkersAtGuestPresentation++;
+            }
+            else if (Program.c.player4.control)
+            {
+                Program.c.player4.WorkersAtGuestPresentation++;
+            }
             GuestPresentationSpotsLabel.Text = GuestPresentationSpotsAvailable.ToString();
             ResearchLabPlace.Enabled = false;
             GroupConferencePlace.Enabled = false;
@@ -113,6 +177,22 @@ namespace RevengerProject3
         private void PeerProgrammingPlace_Click(object sender, EventArgs e)
         {
             PeerProgrammingSpotsAvailable--;
+            if (Program.c.player1.control)
+            {
+                Program.c.player1.WorkersAtPeerProgramming++;
+            }
+            else if (Program.c.player2.control)
+            {
+                Program.c.player2.WorkersAtPeerProgramming++;
+            }
+            else if (Program.c.player3.control)
+            {
+                Program.c.player3.WorkersAtPeerProgramming++;
+            }
+            else if (Program.c.player4.control)
+            {
+                Program.c.player4.WorkersAtPeerProgramming++;
+            }
             PeerProgrammingSpotsLabel.Text = PeerProgrammingSpotsAvailable.ToString();
             ResearchLabPlace.Enabled = false;
             GroupConferencePlace.Enabled = false;
@@ -126,6 +206,26 @@ namespace RevengerProject3
         private void ArchivesPlace_Click(object sender, EventArgs e)
         {
             ArchivesSpotsAvailable--;
+            if (Program.c.player1.control)
+            {
+                Program.c.player1.WorkersAtArchives++;
+                Program.c.player1.OfficeWorkers--;
+            }
+            else if (Program.c.player2.control)
+            {
+                Program.c.player2.WorkersAtArchives++;
+                Program.c.player2.OfficeWorkers--;
+            }
+            else if (Program.c.player3.control)
+            {
+                Program.c.player3.WorkersAtArchives++;
+                Program.c.player3.OfficeWorkers--;
+            }
+            else if (Program.c.player4.control)
+            {
+                Program.c.player4.WorkersAtArchives++;
+                Program.c.player4.OfficeWorkers--;
+            }
             ArchivesSpotsLabel.Text = ArchivesSpotsAvailable.ToString();
             ResearchLabPlace.Enabled = false;
             GroupConferencePlace.Enabled = false;
@@ -138,22 +238,71 @@ namespace RevengerProject3
 
         private void EndPlacement_Click(object sender, EventArgs e)
         {
-            Program.c.ChangeControl();
-            if (Program.c.player1.control)
+            if (Program.c.NumberOfPlayers == 2)
             {
-                PlayerControlLabel.Text = Program.c.player1.Name.ToString()+" can place";
+                if (!Program.c.player2.outOfWorkers && !Program.c.player1.outOfWorkers)
+                {
+                    Program.c.ChangeControl();
+                    if (Program.c.player1.control)
+                    {
+                        PlayerControlLabel.Text = Program.c.player1.Name.ToString() + " can place";
+                        Program.c.player2.checkWorkers();
+                    }
+                    else if (Program.c.player2.control)
+                    {
+                        PlayerControlLabel.Text = Program.c.player2.Name.ToString() + " can place";
+                        Program.c.player1.checkWorkers();
+                    }
+                }
             }
-            else if (Program.c.player2.control)
+            else if (Program.c.NumberOfPlayers == 3)
             {
-                PlayerControlLabel.Text = Program.c.player2.Name.ToString() + " can place";
+                if (!Program.c.player2.outOfWorkers && !Program.c.player1.outOfWorkers && !Program.c.player3.outOfWorkers)
+                {
+                    Program.c.ChangeControl();
+                    if (Program.c.player1.control)
+                    {
+                        PlayerControlLabel.Text = Program.c.player1.Name.ToString() + " can place";
+                        Program.c.player3.checkWorkers();
+                    }
+                    else if (Program.c.player2.control)
+                    {
+                        PlayerControlLabel.Text = Program.c.player2.Name.ToString() + " can place";
+                        Program.c.player1.checkWorkers();
+                    }
+                    else if (Program.c.player3.control)
+                    {
+                        PlayerControlLabel.Text = Program.c.player3.Name.ToString() + " can place";
+                        Program.c.player2.checkWorkers();
+                    }
+                }
             }
-            else if (Program.c.player3.control)
+            else if (Program.c.NumberOfPlayers == 4)
             {
-                PlayerControlLabel.Text = Program.c.player3.Name.ToString() + " can place";
-            }
-            else if (Program.c.player4.control)
-            {
-                PlayerControlLabel.Text = Program.c.player4.Name.ToString() + " can place";
+                if (!Program.c.player2.outOfWorkers && !Program.c.player1.outOfWorkers && !Program.c.player3.outOfWorkers && !Program.c.player4.outOfWorkers)
+                {
+                    Program.c.ChangeControl();
+                    if (Program.c.player1.control)
+                    {
+                        PlayerControlLabel.Text = Program.c.player1.Name.ToString() + " can place";
+                        Program.c.player4.checkWorkers();
+                    }
+                    else if (Program.c.player2.control)
+                    {
+                        PlayerControlLabel.Text = Program.c.player2.Name.ToString() + " can place";
+                        Program.c.player1.checkWorkers();
+                    }
+                    else if (Program.c.player3.control)
+                    {
+                        PlayerControlLabel.Text = Program.c.player3.Name.ToString() + " can place";
+                        Program.c.player2.checkWorkers();
+                    }
+                    else if (Program.c.player4.control)
+                    {
+                        PlayerControlLabel.Text = Program.c.player4.Name.ToString() + " can place";
+                        Program.c.player3.checkWorkers();
+                    }
+                }
             }
         }
     }
