@@ -47,6 +47,10 @@ namespace RevengerProject3
             {
                 player1.control = false;
                 player2.control = true;
+                if (player2.outOfWorkers)
+                    ChangeControl();
+                else
+                    player2.control = true;
             }
             else if (player2.control)
             {
@@ -54,11 +58,15 @@ namespace RevengerProject3
                 {
                     player2.control = false;
                     player3.control = true;
+                    if (player3.outOfWorkers)
+                        ChangeControl();
                 }
                 else
                 {
                     player2.control = false;
                     player1.control = true;
+                    if (player1.outOfWorkers)
+                        ChangeControl();
                 }
             }
             else if (player3.control)
@@ -67,18 +75,36 @@ namespace RevengerProject3
                 {
                     player3.control = false;
                     player4.control = true;
+                    if (player4.outOfWorkers)
+                        ChangeControl();
                 }
                 else
                 {
                     player3.control = false;
                     player1.control = true;
+                    if (player1.outOfWorkers)
+                        ChangeControl();
                 }
             }
             else if (player4.control)
             {
                 player4.control = false;
                 player1.control = true;
+                if (player1.outOfWorkers)
+                    ChangeControl();
             }
+        }
+
+        public void EndRound()
+        {
+            player1.OfficeWorkers = player1.MaxOfficeWorkers;
+            player2.OfficeWorkers = player2.MaxOfficeWorkers;
+            player3.OfficeWorkers = player3.MaxOfficeWorkers;
+            player4.OfficeWorkers = player4.MaxOfficeWorkers;
+            player1.control = true;
+            player2.control = false;
+            player3.control = false;
+            player4.control = false;
         }
     }
 }
