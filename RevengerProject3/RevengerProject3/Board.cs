@@ -258,12 +258,18 @@ namespace RevengerProject3
 
         private void EndPlacement_Click(object sender, EventArgs e)
         {
-            ResearchLabPlace.Enabled = true;
-            GroupConferencePlace.Enabled = true;
-            BreakRoomPlace.Enabled = true;
-            GuestPresentationPlace.Enabled = true;
-            PeerProgrammingPlace.Enabled = true;
-            ArchivesPlace.Enabled = true;
+            if(ResearchLabSpotsAvailable != 0)
+                ResearchLabPlace.Enabled = true;
+            if(GroupConferenceSpotsAvailable != 0)
+                GroupConferencePlace.Enabled = true;
+            if(BreakRoomSpotsAvailable != 0)
+                BreakRoomPlace.Enabled = true;
+            if(GuestPresentationSpotsAvailable != 0)
+                GuestPresentationPlace.Enabled = true;
+            if(PeerProgrammingSpotsAvailable != 0)
+                PeerProgrammingPlace.Enabled = true;
+            if(ArchivesSpotsAvailable != 0)
+                ArchivesPlace.Enabled = true;
 
             if (Program.c.NumberOfPlayers == 2)
             {
