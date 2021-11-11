@@ -30,5 +30,18 @@ namespace RevengerProject3
             if (OfficeWorkers == 0)
                 outOfWorkers = true;
         }
+
+        public void roundReset()
+        {
+            OfficeWorkers = MaxOfficeWorkers;
+            control = false;
+            outOfWorkers = false;
+            WorkersAtArchives = 0;
+            WorkersAtBreakRoom = 0;
+            WorkersAtGroupConference = 0;
+            WorkersAtGuestPresentation = 0;
+            WorkersAtPeerProgramming = 0;
+            WorkersAtResearchLab = 0;
+        }
     }
 }
