@@ -8,6 +8,7 @@ namespace RevengerProject3
     {
         public int NumberOfPlayers { get; set; }
         public Player player1, player2, player3, player4;
+        public bool roundEnded = false;
 
         public Controller()
         {
@@ -43,68 +44,117 @@ namespace RevengerProject3
 
         public void ChangeControl()
         {
-            if (player1.control)
+            if (Program.c.NumberOfPlayers == 2 && !(player1.outOfWorkers && player2.outOfWorkers))
             {
-                player1.control = false;
-                player2.control = true;
-                if (player2.outOfWorkers)
-                    ChangeControl();
-                else
+                player1.checkWorkers();
+                player2.checkWorkers();
+                if (player1.control)
+                {
+                    player1.control = false;
                     player2.control = true;
+                    if (player2.outOfWorkers)
+                        ChangeControl();
+                }
+                else if (player2.control)
+                {
+                        player2.control = false;
+                        player1.control = true;
+                        if (player1.outOfWorkers)
+                            ChangeControl();
+                }
             }
-            else if (player2.control)
+            else if (Program.c.NumberOfPlayers == 3 && !(player1.outOfWorkers && player2.outOfWorkers && player3.outOfWorkers))
             {
-                if (Program.c.NumberOfPlayers >2)
+                player1.checkWorkers();
+                player2.checkWorkers();
+                player3.checkWorkers();
+                if (player1.control)
+                {
+                    player1.control = false;
+                    player2.control = true;
+                    if (player2.outOfWorkers)
+                        ChangeControl();
+                }
+                else if (player2.control)
                 {
                     player2.control = false;
                     player3.control = true;
                     if (player3.outOfWorkers)
                         ChangeControl();
                 }
-                else
+                else if (player3.control)
                 {
-                    player2.control = false;
+                    player3.control = false;
                     player1.control = true;
                     if (player1.outOfWorkers)
                         ChangeControl();
                 }
             }
-            else if (player3.control)
+            else if (Program.c.NumberOfPlayers == 4 && !(player1.outOfWorkers && player2.outOfWorkers && player3.outOfWorkers && player4.outOfWorkers))
             {
-                if (Program.c.NumberOfPlayers > 3)
+                player1.checkWorkers();
+                player2.checkWorkers();
+                player3.checkWorkers();
+                player4.checkWorkers();
+                if (player1.control)
+                {
+                    player1.control = false;
+                    player2.control = true;
+                    if (player2.outOfWorkers)
+                        ChangeControl();
+                }
+                else if (player2.control)
+                {
+                    player2.control = false;
+                    player3.control = true;
+                    if (player3.outOfWorkers)
+                        ChangeControl();
+                }
+                else if (player3.control)
                 {
                     player3.control = false;
                     player4.control = true;
                     if (player4.outOfWorkers)
                         ChangeControl();
                 }
-                else
+                else if (player4.control)
                 {
-                    player3.control = false;
+                    player4.control = false;
                     player1.control = true;
                     if (player1.outOfWorkers)
                         ChangeControl();
                 }
             }
-            else if (player4.control)
+            else if ((Program.c.NumberOfPlayers == 4 && player1.outOfWorkers && player2.outOfWorkers && player3.outOfWorkers && player4.outOfWorkers) |
+                      Program.c.NumberOfPlayers == 3 && player1.outOfWorkers && player2.outOfWorkers && player3.outOfWorkers |
+                      Program.c.NumberOfPlayers == 2 && player1.outOfWorkers && player2.outOfWorkers)
             {
-                player4.control = false;
-                player1.control = true;
-                if (player1.outOfWorkers)
-                    ChangeControl();
+                roundEnded = true;
+                EndRound();
             }
         }
 
         public void EndRound()
         {
-            player1.OfficeWorkers = player1.MaxOfficeWorkers;
-            player2.OfficeWorkers = player2.MaxOfficeWorkers;
-            player3.OfficeWorkers = player3.MaxOfficeWorkers;
-            player4.OfficeWorkers = player4.MaxOfficeWorkers;
+            if (NumberOfPlayers == 2)
+            {
+                player1.roundReset();
+                player2.roundReset();
+            }
+            else if (NumberOfPlayers == 3)
+            {
+                player1.roundReset();
+                player2.roundReset();
+                player3.roundReset();
+            }
+            else if (NumberOfPlayers == 4)
+            {
+                player1.roundReset();
+                player2.roundReset();
+                player3.roundReset();
+                player4.roundReset();
+            }
             player1.control = true;
-            player2.control = false;
-            player3.control = false;
-            player4.control = false;
         }
     }
 }
