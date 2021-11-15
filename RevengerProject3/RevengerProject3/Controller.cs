@@ -126,8 +126,8 @@ namespace RevengerProject3
                 }
             }
             else if ((Program.c.NumberOfPlayers == 4 && player1.outOfWorkers && player2.outOfWorkers && player3.outOfWorkers && player4.outOfWorkers) |
-                      Program.c.NumberOfPlayers == 3 && player1.outOfWorkers && player2.outOfWorkers && player3.outOfWorkers |
-                      Program.c.NumberOfPlayers == 2 && player1.outOfWorkers && player2.outOfWorkers)
+                      (Program.c.NumberOfPlayers == 3 && player1.outOfWorkers && player2.outOfWorkers && player3.outOfWorkers) |
+                      (Program.c.NumberOfPlayers == 2 && player1.outOfWorkers && player2.outOfWorkers))
             {
                 roundEnded = true;
                 EndRound();
@@ -138,23 +138,105 @@ namespace RevengerProject3
         {
             if (NumberOfPlayers == 2)
             {
+                player1.Research += ResearchResource(player1);
+                player2.Research += ResearchResource(player2);
+                player1.Classes += ClassResource(player1);
+                player2.Classes += ClassResource(player2);
+                player1.Morale += MoraleResource(player1);
+                player2.Morale += MoraleResource(player2);
+                player1.Rest += RestResource(player1);
+                player2.Rest += RestResource(player2);
+                player1.MaxOfficeWorkers += NewWorker(player1);
+                player2.MaxOfficeWorkers += NewWorker(player2);
                 player1.roundReset();
                 player2.roundReset();
             }
             else if (NumberOfPlayers == 3)
             {
+                player1.Research += ResearchResource(player1);
+                player2.Research += ResearchResource(player2);
+                player3.Research += ResearchResource(player3);
+                player1.Classes += ClassResource(player1);
+                player2.Classes += ClassResource(player2);
+                player3.Classes += ClassResource(player3);
+                player1.Morale += MoraleResource(player1);
+                player2.Morale += MoraleResource(player2);
+                player3.Morale += MoraleResource(player3);
+                player1.Rest += RestResource(player1);
+                player2.Rest += RestResource(player2);
+                player3.Rest += RestResource(player3);
                 player1.roundReset();
                 player2.roundReset();
                 player3.roundReset();
             }
             else if (NumberOfPlayers == 4)
             {
+                player1.Research += ResearchResource(player1);
+                player2.Research += ResearchResource(player2);
+                player3.Research += ResearchResource(player3);
+                player4.Research += ResearchResource(player4);
+                player1.Classes += ClassResource(player1);
+                player2.Classes += ClassResource(player2);
+                player3.Classes += ClassResource(player3);
+                player4.Classes += ClassResource(player4);
+                player1.Morale += MoraleResource(player1);
+                player2.Morale += MoraleResource(player2);
+                player3.Morale += MoraleResource(player3);
+                player4.Morale += MoraleResource(player4);
+                player1.Rest += RestResource(player1);
+                player2.Rest += RestResource(player2);
+                player3.Rest += RestResource(player3);
+                player4.Rest += RestResource(player4);
                 player1.roundReset();
                 player2.roundReset();
                 player3.roundReset();
                 player4.roundReset();
             }
             player1.control = true;
+        }
+
+        public int ResearchResource(Player p)
+        {
+            int Research = 0;
+            Random r = new Random();
+            int roll = r.Next(1, 7);
+            Research = p.WorkersAtResearchLab * roll;
+            return Research;
+        }
+        public int ClassResource(Player p)
+        {
+            int Classes = 0;
+            Random r = new Random();
+            int roll = r.Next(1, 7);
+            Classes = p.WorkersAtPeerProgramming * roll;
+            return Classes;
+        }
+        public int MoraleResource(Player p)
+        {
+            int Morale = 0;
+            Random r = new Random();
+            int roll = r.Next(1, 7);
+            Morale = p.WorkersAtGroupConference * roll;
+            return Morale;
+        }
+        public int RestResource(Player p)
+        {
+            int Rest = 0;
+            Random r = new Random();
+            int roll = r.Next(1, 7);
+            Rest = p.WorkersAtBreakRoom * roll * 2;
+            return Rest;
+        }
+        public int NewWorker(Player p)
+        {
+            int Workers = 0;
+            Random r = new Random();
+            int roll = r.Next(1, 7);
+            if (roll > 3)
+            {
+                Workers = p.WorkersAtGuestPresentation;
+            }
+            return Workers;
         }
     }
 }

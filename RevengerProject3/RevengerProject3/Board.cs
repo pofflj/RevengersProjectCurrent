@@ -13,7 +13,7 @@ namespace RevengerProject3
         public int ResearchLabSpotsAvailable { get; set; } = 5;
         public int BreakRoomSpotsAvailable { get; set; } = 5;
         public int GroupConferenceSpotsAvailable { get; set; } = 5;
-        public int GuestPresentationSpotsAvailable { get; set; } = 5;
+        public int GuestPresentationSpotsAvailable { get; set; } = 2;
         public int PeerProgrammingSpotsAvailable { get; set; } = 5;
         public int ArchivesSpotsAvailable { get; set; } = 5;
 
@@ -273,6 +273,8 @@ namespace RevengerProject3
 
             if (Program.c.NumberOfPlayers == 2)
             {
+                Program.c.player1.checkWorkers();
+                Program.c.player2.checkWorkers();
                 Program.c.ChangeControl();
                 if (Program.c.roundEnded)
                     ResetBoard();
