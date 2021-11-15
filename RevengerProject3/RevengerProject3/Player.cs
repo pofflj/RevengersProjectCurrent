@@ -17,6 +17,10 @@ namespace RevengerProject3
         public int WorkersAtBreakRoom { get; set; }
         public int WorkersAtGuestPresentation { get; set; }
         public int WorkersAtArchives { get; set; }
+        public int Research { get; set; }
+        public int Classes { get; set; }
+        public int Morale { get; set; }
+        public int Rest { get; set; }
 
         public Player(string name)
         {
