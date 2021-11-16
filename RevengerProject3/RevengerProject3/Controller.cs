@@ -194,6 +194,7 @@ namespace RevengerProject3
             }
             player1.control = true;
         }
+       
 
         public int ResearchResource(Player p)
         {
