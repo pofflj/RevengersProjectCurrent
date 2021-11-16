@@ -17,6 +17,8 @@ namespace RevengerProject3
         public int PeerProgrammingSpotsAvailable { get; set; } = 5;
         public int ArchivesSpotsAvailable { get; set; } = 5;
 
+        PlayerCardForAll playercard = new PlayerCardForAll();
+
         public Board()
         {
             InitializeComponent();
@@ -89,6 +91,7 @@ namespace RevengerProject3
             ArchivesPlace.Enabled = false;
             if (ResearchLabSpotsAvailable == 0)
                 ResearchLabPlace.Enabled = false;
+            playercard.updatePlayerCard();
         }
 
         private void BreakRoomPlace_Click(object sender, EventArgs e)
@@ -122,6 +125,7 @@ namespace RevengerProject3
             ArchivesPlace.Enabled = false;
             if (BreakRoomSpotsAvailable == 0)
                 BreakRoomPlace.Enabled = false;
+            playercard.updatePlayerCard();
         }
 
         private void GroupConferencePlace_Click(object sender, EventArgs e)
@@ -155,6 +159,7 @@ namespace RevengerProject3
             ArchivesPlace.Enabled = false;
             if (GroupConferenceSpotsAvailable == 0)
                 GroupConferencePlace.Enabled = false;
+            playercard.updatePlayerCard();
         }
 
         private void GuestPresentationPlace_Click(object sender, EventArgs e)
@@ -188,6 +193,7 @@ namespace RevengerProject3
             ArchivesPlace.Enabled = false;
             if (GuestPresentationSpotsAvailable == 0)
                 GuestPresentationPlace.Enabled = false;
+            playercard.updatePlayerCard();
         }
 
         private void PeerProgrammingPlace_Click(object sender, EventArgs e)
@@ -221,6 +227,7 @@ namespace RevengerProject3
             ArchivesPlace.Enabled = false;
             if (PeerProgrammingSpotsAvailable == 0)
                 PeerProgrammingPlace.Enabled = false;
+            playercard.updatePlayerCard();
         }
 
         private void ArchivesPlace_Click(object sender, EventArgs e)
@@ -254,6 +261,7 @@ namespace RevengerProject3
             PeerProgrammingPlace.Enabled = false;
             if (ArchivesSpotsAvailable == 0)
                 ArchivesPlace.Enabled = false;
+            playercard.updatePlayerCard();
         }
 
         private void EndPlacement_Click(object sender, EventArgs e)
@@ -327,13 +335,14 @@ namespace RevengerProject3
                         PlayerControlLabel.Text = Program.c.player4.Name.ToString() + " can place";
                     }
             }
+            playercard.updatePlayerCard();
         }
 
         public void ResetBoard()
         {
             ResearchLabSpotsAvailable = 5;
             GroupConferenceSpotsAvailable = 5;
-            GuestPresentationSpotsAvailable = 5;
+            GuestPresentationSpotsAvailable = 2;
             ArchivesSpotsAvailable = 5;
             BreakRoomSpotsAvailable = 5;
             PeerProgrammingSpotsAvailable = 5;
@@ -345,6 +354,18 @@ namespace RevengerProject3
             ArchivesSpotsLabel.Text = ArchivesSpotsAvailable.ToString();
             PlayerControlLabel.Text = Program.c.player1.Name.ToString() + " can place";
             Program.c.roundEnded = false;
+
+            ResearchLabPlace.Enabled = true;
+            GroupConferencePlace.Enabled = true;
+            BreakRoomPlace.Enabled = true;
+            GuestPresentationPlace.Enabled = true;
+            PeerProgrammingPlace.Enabled = true;
+            ArchivesPlace.Enabled = true;
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            playercard.Show();
         }
     }
 }

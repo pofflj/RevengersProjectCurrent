@@ -38,3 +38,24 @@ C:\Users\Logan\Documents\GitHub\RevengersProjectCurrent\RevengerProject3\Revenge
 C:\Users\Logan\Documents\GitHub\RevengersProjectCurrent\RevengerProject3\RevengerProject3\bin\Debug\netcoreapp3.1\RevengerProject3.dll
 C:\Users\Logan\Documents\GitHub\RevengersProjectCurrent\RevengerProject3\RevengerProject3\bin\Debug\netcoreapp3.1\RevengerProject3.pdb
 C:\Users\Logan\Documents\GitHub\RevengersProjectCurrent\RevengerProject3\RevengerProject3\obj\Debug\netcoreapp3.1\RevengerProject3.genruntimeconfig.cache
+C:\Users\lukep\Software Engeneering 1\GitHub\RevengersProjectCurrent\RevengerProject3\RevengerProject3\bin\Debug\netcoreapp3.1\RevengerProject3.exe
+C:\Users\lukep\Software Engeneering 1\GitHub\RevengersProjectCurrent\RevengerProject3\RevengerProject3\bin\Debug\netcoreapp3.1\RevengerProject3.deps.json
+C:\Users\lukep\Software Engeneering 1\GitHub\RevengersProjectCurrent\RevengerProject3\RevengerProject3\bin\Debug\netcoreapp3.1\RevengerProject3.runtimeconfig.json
+C:\Users\lukep\Software Engeneering 1\GitHub\RevengersProjectCurrent\RevengerProject3\RevengerProject3\bin\Debug\netcoreapp3.1\RevengerProject3.runtimeconfig.dev.json
+C:\Users\lukep\Software Engeneering 1\GitHub\RevengersProjectCurrent\RevengerProject3\RevengerProject3\bin\Debug\netcoreapp3.1\RevengerProject3.dll
+C:\Users\lukep\Software Engeneering 1\GitHub\RevengersProjectCurrent\RevengerProject3\RevengerProject3\bin\Debug\netcoreapp3.1\RevengerProject3.pdb
+C:\Users\lukep\Software Engeneering 1\GitHub\RevengersProjectCurrent\RevengerProject3\RevengerProject3\obj\Debug\netcoreapp3.1\RevengerProject3.csprojAssemblyReference.cache
+C:\Users\lukep\Software Engeneering 1\GitHub\RevengersProjectCurrent\RevengerProject3\RevengerProject3\obj\Debug\netcoreapp3.1\RevengerProject3.Board.resources
+C:\Users\lukep\Software Engeneering 1\GitHub\RevengersProjectCurrent\RevengerProject3\RevengerProject3\obj\Debug\netcoreapp3.1\RevengerProject3.RollDice.resources
+C:\Users\lukep\Software Engeneering 1\GitHub\RevengersProjectCurrent\RevengerProject3\RevengerProject3\obj\Debug\netcoreapp3.1\RevengerProject3.InitialScreen.resources
+C:\Users\lukep\Software Engeneering 1\GitHub\RevengersProjectCurrent\RevengerProject3\RevengerProject3\obj\Debug\netcoreapp3.1\RevengerProject3.Properties.Resources.resources
+C:\Users\lukep\Software Engeneering 1\GitHub\RevengersProjectCurrent\RevengerProject3\RevengerProject3\obj\Debug\netcoreapp3.1\RevengerProject3.Rules.resources
+C:\Users\lukep\Software Engeneering 1\GitHub\RevengersProjectCurrent\RevengerProject3\RevengerProject3\obj\Debug\netcoreapp3.1\RevengerProject3.StartUpMenu.resources
+C:\Users\lukep\Software Engeneering 1\GitHub\RevengersProjectCurrent\RevengerProject3\RevengerProject3\obj\Debug\netcoreapp3.1\RevengerProject3.csproj.GenerateResource.cache
+C:\Users\lukep\Software Engeneering 1\GitHub\RevengersProjectCurrent\RevengerProject3\RevengerProject3\obj\Debug\netcoreapp3.1\RevengerProject3.AssemblyInfoInputs.cache
+C:\Users\lukep\Software Engeneering 1\GitHub\RevengersProjectCurrent\RevengerProject3\RevengerProject3\obj\Debug\netcoreapp3.1\RevengerProject3.AssemblyInfo.cs
+C:\Users\lukep\Software Engeneering 1\GitHub\RevengersProjectCurrent\RevengerProject3\RevengerProject3\obj\Debug\netcoreapp3.1\RevengerProject3.csproj.CoreCompileInputs.cache
+C:\Users\lukep\Software Engeneering 1\GitHub\RevengersProjectCurrent\RevengerProject3\RevengerProject3\obj\Debug\netcoreapp3.1\RevengerProject3.dll
+C:\Users\lukep\Software Engeneering 1\GitHub\RevengersProjectCurrent\RevengerProject3\RevengerProject3\obj\Debug\netcoreapp3.1\RevengerProject3.pdb
+C:\Users\lukep\Software Engeneering 1\GitHub\RevengersProjectCurrent\RevengerProject3\RevengerProject3\obj\Debug\netcoreapp3.1\RevengerProject3.genruntimeconfig.cache
+C:\Users\lukep\Software Engeneering 1\GitHub\RevengersProjectCurrent\RevengerProject3\RevengerProject3\obj\Debug\netcoreapp3.1\RevengerProject3.PlayerCardForAll.resources

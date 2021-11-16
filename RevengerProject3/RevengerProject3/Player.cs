@@ -27,6 +27,7 @@ namespace RevengerProject3
             Name = name;
             MaxOfficeWorkers = 5;
             OfficeWorkers = MaxOfficeWorkers;
+
         }
 
         public void checkWorkers()
