@@ -6,6 +6,7 @@ namespace RevengerProject3
 {
     public class Player
     {
+        //max number of office workers
         public int MaxOfficeWorkers { get; set; }
         public int OfficeWorkers { get; set; }
         public string Name { get; set; }
