@@ -8,19 +8,23 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\lukep\\.nuget\\packages\\": {}
+    "C:\\Users\\dalto\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\lukep\\Software Engeneering 1\\GitHub\\RevengersProjectCurrent\\RevengerProject3\\RevengerProject3\\RevengerProject3.csproj",
+      "projectUniqueName": "C:\\Users\\dalto\\Documents\\GitHub\\RevengersProjectCurrent\\RevengerProject3\\RevengerProject3\\RevengerProject3.csproj",
       "projectName": "RevengerProject3",
-      "projectPath": "C:\\Users\\lukep\\Software Engeneering 1\\GitHub\\RevengersProjectCurrent\\RevengerProject3\\RevengerProject3\\RevengerProject3.csproj",
-      "packagesPath": "C:\\Users\\lukep\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\lukep\\Software Engeneering 1\\GitHub\\RevengersProjectCurrent\\RevengerProject3\\RevengerProject3\\obj\\",
+      "projectPath": "C:\\Users\\dalto\\Documents\\GitHub\\RevengersProjectCurrent\\RevengerProject3\\RevengerProject3\\RevengerProject3.csproj",
+      "packagesPath": "C:\\Users\\dalto\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\dalto\\Documents\\GitHub\\RevengersProjectCurrent\\RevengerProject3\\RevengerProject3\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "C:\\Users\\lukep\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\dalto\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -61,7 +65,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
       }
     }
   }
