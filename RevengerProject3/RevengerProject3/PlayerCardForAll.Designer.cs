@@ -65,9 +65,9 @@
             // p1Name
             // 
             this.p1Name.AutoSize = true;
-            this.p1Name.Location = new System.Drawing.Point(262, 62);
+            this.p1Name.Location = new System.Drawing.Point(229, 46);
             this.p1Name.Name = "p1Name";
-            this.p1Name.Size = new System.Drawing.Size(50, 20);
+            this.p1Name.Size = new System.Drawing.Size(38, 15);
             this.p1Name.TabIndex = 0;
             this.p1Name.Text = "label1";
             this.p1Name.Click += new System.EventHandler(this.label1_Click);
@@ -75,72 +75,72 @@
             // p2Name
             // 
             this.p2Name.AutoSize = true;
-            this.p2Name.Location = new System.Drawing.Point(406, 62);
+            this.p2Name.Location = new System.Drawing.Point(355, 46);
             this.p2Name.Name = "p2Name";
-            this.p2Name.Size = new System.Drawing.Size(50, 20);
+            this.p2Name.Size = new System.Drawing.Size(38, 15);
             this.p2Name.TabIndex = 0;
             this.p2Name.Text = "label2";
             // 
             // p3Name
             // 
             this.p3Name.AutoSize = true;
-            this.p3Name.Location = new System.Drawing.Point(554, 62);
+            this.p3Name.Location = new System.Drawing.Point(485, 46);
             this.p3Name.Name = "p3Name";
-            this.p3Name.Size = new System.Drawing.Size(50, 20);
+            this.p3Name.Size = new System.Drawing.Size(38, 15);
             this.p3Name.TabIndex = 0;
             this.p3Name.Text = "label3";
             // 
             // p4Name
             // 
             this.p4Name.AutoSize = true;
-            this.p4Name.Location = new System.Drawing.Point(703, 62);
+            this.p4Name.Location = new System.Drawing.Point(615, 46);
             this.p4Name.Name = "p4Name";
-            this.p4Name.Size = new System.Drawing.Size(50, 20);
+            this.p4Name.Size = new System.Drawing.Size(38, 15);
             this.p4Name.TabIndex = 0;
             this.p4Name.Text = "label4";
             // 
             // researchName
             // 
             this.researchName.AutoSize = true;
-            this.researchName.Location = new System.Drawing.Point(13, 138);
+            this.researchName.Location = new System.Drawing.Point(11, 104);
             this.researchName.Name = "researchName";
-            this.researchName.Size = new System.Drawing.Size(68, 20);
+            this.researchName.Size = new System.Drawing.Size(54, 15);
             this.researchName.TabIndex = 1;
             this.researchName.Text = "Research";
             // 
             // classesName
             // 
             this.classesName.AutoSize = true;
-            this.classesName.Location = new System.Drawing.Point(13, 255);
+            this.classesName.Location = new System.Drawing.Point(11, 191);
             this.classesName.Name = "classesName";
-            this.classesName.Size = new System.Drawing.Size(56, 20);
+            this.classesName.Size = new System.Drawing.Size(45, 15);
             this.classesName.TabIndex = 1;
             this.classesName.Text = "Classes";
             // 
             // restName
             // 
             this.restName.AutoSize = true;
-            this.restName.Location = new System.Drawing.Point(13, 317);
+            this.restName.Location = new System.Drawing.Point(11, 238);
             this.restName.Name = "restName";
-            this.restName.Size = new System.Drawing.Size(37, 20);
+            this.restName.Size = new System.Drawing.Size(29, 15);
             this.restName.TabIndex = 1;
             this.restName.Text = "Rest";
             // 
             // moraleName
             // 
             this.moraleName.AutoSize = true;
-            this.moraleName.Location = new System.Drawing.Point(13, 199);
+            this.moraleName.Location = new System.Drawing.Point(11, 149);
             this.moraleName.Name = "moraleName";
-            this.moraleName.Size = new System.Drawing.Size(56, 20);
+            this.moraleName.Size = new System.Drawing.Size(44, 15);
             this.moraleName.TabIndex = 1;
             this.moraleName.Text = "Morale";
             // 
             // aWorkerName
             // 
             this.aWorkerName.AutoSize = true;
-            this.aWorkerName.Location = new System.Drawing.Point(13, 371);
+            this.aWorkerName.Location = new System.Drawing.Point(11, 278);
             this.aWorkerName.Name = "aWorkerName";
-            this.aWorkerName.Size = new System.Drawing.Size(128, 20);
+            this.aWorkerName.Size = new System.Drawing.Size(101, 15);
             this.aWorkerName.TabIndex = 1;
             this.aWorkerName.Text = "Available Workers";
             this.aWorkerName.Click += new System.EventHandler(this.label9_Click);
@@ -148,98 +148,98 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(5, 335);
+            this.label10.Location = new System.Drawing.Point(4, 251);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(0, 20);
+            this.label10.Size = new System.Drawing.Size(0, 15);
             this.label10.TabIndex = 1;
             // 
             // p1re
             // 
             this.p1re.AutoSize = true;
-            this.p1re.Location = new System.Drawing.Point(262, 138);
+            this.p1re.Location = new System.Drawing.Point(229, 104);
             this.p1re.Name = "p1re";
-            this.p1re.Size = new System.Drawing.Size(17, 20);
+            this.p1re.Size = new System.Drawing.Size(13, 15);
             this.p1re.TabIndex = 2;
             this.p1re.Text = "0";
             // 
             // p1aw
             // 
             this.p1aw.AutoSize = true;
-            this.p1aw.Location = new System.Drawing.Point(262, 371);
+            this.p1aw.Location = new System.Drawing.Point(229, 278);
             this.p1aw.Name = "p1aw";
-            this.p1aw.Size = new System.Drawing.Size(17, 20);
+            this.p1aw.Size = new System.Drawing.Size(13, 15);
             this.p1aw.TabIndex = 2;
             this.p1aw.Text = "5";
             // 
             // p1rest
             // 
             this.p1rest.AutoSize = true;
-            this.p1rest.Location = new System.Drawing.Point(262, 317);
+            this.p1rest.Location = new System.Drawing.Point(229, 238);
             this.p1rest.Name = "p1rest";
-            this.p1rest.Size = new System.Drawing.Size(17, 20);
+            this.p1rest.Size = new System.Drawing.Size(13, 15);
             this.p1rest.TabIndex = 2;
             this.p1rest.Text = "0";
             // 
             // p1class
             // 
             this.p1class.AutoSize = true;
-            this.p1class.Location = new System.Drawing.Point(262, 255);
+            this.p1class.Location = new System.Drawing.Point(229, 191);
             this.p1class.Name = "p1class";
-            this.p1class.Size = new System.Drawing.Size(17, 20);
+            this.p1class.Size = new System.Drawing.Size(13, 15);
             this.p1class.TabIndex = 2;
             this.p1class.Text = "0";
             // 
             // p1mor
             // 
             this.p1mor.AutoSize = true;
-            this.p1mor.Location = new System.Drawing.Point(262, 199);
+            this.p1mor.Location = new System.Drawing.Point(229, 149);
             this.p1mor.Name = "p1mor";
-            this.p1mor.Size = new System.Drawing.Size(17, 20);
+            this.p1mor.Size = new System.Drawing.Size(13, 15);
             this.p1mor.TabIndex = 2;
             this.p1mor.Text = "0";
             // 
             // p2rest
             // 
             this.p2rest.AutoSize = true;
-            this.p2rest.Location = new System.Drawing.Point(406, 317);
+            this.p2rest.Location = new System.Drawing.Point(355, 238);
             this.p2rest.Name = "p2rest";
-            this.p2rest.Size = new System.Drawing.Size(17, 20);
+            this.p2rest.Size = new System.Drawing.Size(13, 15);
             this.p2rest.TabIndex = 2;
             this.p2rest.Text = "0";
             // 
             // p2aw
             // 
             this.p2aw.AutoSize = true;
-            this.p2aw.Location = new System.Drawing.Point(406, 371);
+            this.p2aw.Location = new System.Drawing.Point(355, 278);
             this.p2aw.Name = "p2aw";
-            this.p2aw.Size = new System.Drawing.Size(17, 20);
+            this.p2aw.Size = new System.Drawing.Size(13, 15);
             this.p2aw.TabIndex = 2;
             this.p2aw.Text = "5";
             // 
             // p3aw
             // 
             this.p3aw.AutoSize = true;
-            this.p3aw.Location = new System.Drawing.Point(554, 371);
+            this.p3aw.Location = new System.Drawing.Point(485, 278);
             this.p3aw.Name = "p3aw";
-            this.p3aw.Size = new System.Drawing.Size(17, 20);
+            this.p3aw.Size = new System.Drawing.Size(13, 15);
             this.p3aw.TabIndex = 2;
             this.p3aw.Text = "5";
             // 
             // p3rest
             // 
             this.p3rest.AutoSize = true;
-            this.p3rest.Location = new System.Drawing.Point(554, 317);
+            this.p3rest.Location = new System.Drawing.Point(485, 238);
             this.p3rest.Name = "p3rest";
-            this.p3rest.Size = new System.Drawing.Size(17, 20);
+            this.p3rest.Size = new System.Drawing.Size(13, 15);
             this.p3rest.TabIndex = 2;
             this.p3rest.Text = "0";
             // 
             // p3class
             // 
             this.p3class.AutoSize = true;
-            this.p3class.Location = new System.Drawing.Point(554, 255);
+            this.p3class.Location = new System.Drawing.Point(485, 191);
             this.p3class.Name = "p3class";
-            this.p3class.Size = new System.Drawing.Size(17, 20);
+            this.p3class.Size = new System.Drawing.Size(13, 15);
             this.p3class.TabIndex = 2;
             this.p3class.Text = "0";
             this.p3class.Click += new System.EventHandler(this.label20_Click);
@@ -247,98 +247,99 @@
             // p3mor
             // 
             this.p3mor.AutoSize = true;
-            this.p3mor.Location = new System.Drawing.Point(554, 199);
+            this.p3mor.Location = new System.Drawing.Point(485, 149);
             this.p3mor.Name = "p3mor";
-            this.p3mor.Size = new System.Drawing.Size(17, 20);
+            this.p3mor.Size = new System.Drawing.Size(13, 15);
             this.p3mor.TabIndex = 2;
             this.p3mor.Text = "0";
             // 
             // p4class
             // 
             this.p4class.AutoSize = true;
-            this.p4class.Location = new System.Drawing.Point(703, 255);
+            this.p4class.Location = new System.Drawing.Point(615, 191);
             this.p4class.Name = "p4class";
-            this.p4class.Size = new System.Drawing.Size(17, 20);
+            this.p4class.Size = new System.Drawing.Size(13, 15);
             this.p4class.TabIndex = 2;
             this.p4class.Text = "0";
             // 
             // p4aw
             // 
             this.p4aw.AutoSize = true;
-            this.p4aw.Location = new System.Drawing.Point(703, 371);
+            this.p4aw.Location = new System.Drawing.Point(615, 278);
             this.p4aw.Name = "p4aw";
-            this.p4aw.Size = new System.Drawing.Size(17, 20);
+            this.p4aw.Size = new System.Drawing.Size(13, 15);
             this.p4aw.TabIndex = 2;
             this.p4aw.Text = "5";
             // 
             // p4rest
             // 
             this.p4rest.AutoSize = true;
-            this.p4rest.Location = new System.Drawing.Point(703, 317);
+            this.p4rest.Location = new System.Drawing.Point(615, 238);
             this.p4rest.Name = "p4rest";
-            this.p4rest.Size = new System.Drawing.Size(17, 20);
+            this.p4rest.Size = new System.Drawing.Size(13, 15);
             this.p4rest.TabIndex = 2;
             this.p4rest.Text = "0";
             // 
             // p4mor
             // 
             this.p4mor.AutoSize = true;
-            this.p4mor.Location = new System.Drawing.Point(703, 199);
+            this.p4mor.Location = new System.Drawing.Point(615, 149);
             this.p4mor.Name = "p4mor";
-            this.p4mor.Size = new System.Drawing.Size(17, 20);
+            this.p4mor.Size = new System.Drawing.Size(13, 15);
             this.p4mor.TabIndex = 2;
             this.p4mor.Text = "0";
             // 
             // p4re
             // 
             this.p4re.AutoSize = true;
-            this.p4re.Location = new System.Drawing.Point(703, 138);
+            this.p4re.Location = new System.Drawing.Point(615, 104);
             this.p4re.Name = "p4re";
-            this.p4re.Size = new System.Drawing.Size(17, 20);
+            this.p4re.Size = new System.Drawing.Size(13, 15);
             this.p4re.TabIndex = 2;
             this.p4re.Text = "0";
             // 
             // p3re
             // 
             this.p3re.AutoSize = true;
-            this.p3re.Location = new System.Drawing.Point(554, 138);
+            this.p3re.Location = new System.Drawing.Point(485, 104);
             this.p3re.Name = "p3re";
-            this.p3re.Size = new System.Drawing.Size(17, 20);
+            this.p3re.Size = new System.Drawing.Size(13, 15);
             this.p3re.TabIndex = 2;
             this.p3re.Text = "0";
             // 
             // p2re
             // 
             this.p2re.AutoSize = true;
-            this.p2re.Location = new System.Drawing.Point(406, 138);
+            this.p2re.Location = new System.Drawing.Point(355, 104);
             this.p2re.Name = "p2re";
-            this.p2re.Size = new System.Drawing.Size(17, 20);
+            this.p2re.Size = new System.Drawing.Size(13, 15);
             this.p2re.TabIndex = 2;
             this.p2re.Text = "0";
             // 
             // p2mor
             // 
             this.p2mor.AutoSize = true;
-            this.p2mor.Location = new System.Drawing.Point(406, 199);
+            this.p2mor.Location = new System.Drawing.Point(355, 149);
             this.p2mor.Name = "p2mor";
-            this.p2mor.Size = new System.Drawing.Size(17, 20);
+            this.p2mor.Size = new System.Drawing.Size(13, 15);
             this.p2mor.TabIndex = 2;
             this.p2mor.Text = "0";
             // 
             // p2class
             // 
             this.p2class.AutoSize = true;
-            this.p2class.Location = new System.Drawing.Point(406, 255);
+            this.p2class.Location = new System.Drawing.Point(355, 191);
             this.p2class.Name = "p2class";
-            this.p2class.Size = new System.Drawing.Size(17, 20);
+            this.p2class.Size = new System.Drawing.Size(13, 15);
             this.p2class.TabIndex = 2;
             this.p2class.Text = "0";
             // 
             // hideButton
             // 
-            this.hideButton.Location = new System.Drawing.Point(370, 409);
+            this.hideButton.Location = new System.Drawing.Point(324, 307);
+            this.hideButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.hideButton.Name = "hideButton";
-            this.hideButton.Size = new System.Drawing.Size(94, 29);
+            this.hideButton.Size = new System.Drawing.Size(82, 22);
             this.hideButton.TabIndex = 3;
             this.hideButton.Text = "Hide";
             this.hideButton.UseVisualStyleBackColor = true;
@@ -346,11 +347,11 @@
             // 
             // PlayerCardForAll
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(700, 338);
             this.Controls.Add(this.hideButton);
             this.Controls.Add(this.p2class);
             this.Controls.Add(this.p2mor);
@@ -382,8 +383,9 @@
             this.Controls.Add(this.p3Name);
             this.Controls.Add(this.p2Name);
             this.Controls.Add(this.p1Name);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "PlayerCardForAll";
-            this.Text = "PlayerCardForAll";
+            this.Text = " ";
             this.Load += new System.EventHandler(this.PlayerCardForAll_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
