@@ -6,6 +6,7 @@ namespace RevengerProject3
 {
     class OfficeWorker
     {
+
         protected string _OfficeWorkerTitle;
         protected int _OfficeWorkerAmount;
 
