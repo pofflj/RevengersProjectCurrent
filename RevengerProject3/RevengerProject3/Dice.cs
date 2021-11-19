@@ -16,6 +16,7 @@ namespace BoardGame
          */
         public int DiceRoller()
         {
+
             Random rand = new Random();
             int diceRoll = rand.Next(1, 7);
             switch(diceRoll)
