@@ -61,21 +61,3 @@ C:\Users\lukep\Software Engeneering 1\GitHub\RevengersProjectCurrent\RevengersPr
 C:\Users\lukep\Software Engeneering 1\GitHub\RevengersProjectCurrent\RevengersProjectCurrent\RevengerProject3\RevengerProject3\obj\Debug\netcoreapp3.1\RevengerProject3.dll
 C:\Users\lukep\Software Engeneering 1\GitHub\RevengersProjectCurrent\RevengersProjectCurrent\RevengerProject3\RevengerProject3\obj\Debug\netcoreapp3.1\RevengerProject3.pdb
 C:\Users\lukep\Software Engeneering 1\GitHub\RevengersProjectCurrent\RevengersProjectCurrent\RevengerProject3\RevengerProject3\obj\Debug\netcoreapp3.1\RevengerProject3.genruntimeconfig.cache
-C:\Users\dalto\Documents\GitHub\RevengersProjectCurrent\RevengersProjectCurrent\RevengerProject3\RevengerProject3\bin\Debug\netcoreapp3.1\RevengerProject3.exe
-C:\Users\dalto\Documents\GitHub\RevengersProjectCurrent\RevengersProjectCurrent\RevengerProject3\RevengerProject3\bin\Debug\netcoreapp3.1\RevengerProject3.deps.json
-C:\Users\dalto\Documents\GitHub\RevengersProjectCurrent\RevengersProjectCurrent\RevengerProject3\RevengerProject3\bin\Debug\netcoreapp3.1\RevengerProject3.runtimeconfig.json
-C:\Users\dalto\Documents\GitHub\RevengersProjectCurrent\RevengersProjectCurrent\RevengerProject3\RevengerProject3\bin\Debug\netcoreapp3.1\RevengerProject3.runtimeconfig.dev.json
-C:\Users\dalto\Documents\GitHub\RevengersProjectCurrent\RevengersProjectCurrent\RevengerProject3\RevengerProject3\bin\Debug\netcoreapp3.1\RevengerProject3.dll
-C:\Users\dalto\Documents\GitHub\RevengersProjectCurrent\RevengersProjectCurrent\RevengerProject3\RevengerProject3\bin\Debug\netcoreapp3.1\RevengerProject3.pdb
-C:\Users\dalto\Documents\GitHub\RevengersProjectCurrent\RevengersProjectCurrent\RevengerProject3\RevengerProject3\obj\Debug\netcoreapp3.1\RevengerProject3.csprojAssemblyReference.cache
-C:\Users\dalto\Documents\GitHub\RevengersProjectCurrent\RevengersProjectCurrent\RevengerProject3\RevengerProject3\obj\Debug\netcoreapp3.1\RevengerProject3.Board.resources
-C:\Users\dalto\Documents\GitHub\RevengersProjectCurrent\RevengersProjectCurrent\RevengerProject3\RevengerProject3\obj\Debug\netcoreapp3.1\RevengerProject3.RollDice.resources
-C:\Users\dalto\Documents\GitHub\RevengersProjectCurrent\RevengersProjectCurrent\RevengerProject3\RevengerProject3\obj\Debug\netcoreapp3.1\RevengerProject3.InitialScreen.resources
-C:\Users\dalto\Documents\GitHub\RevengersProjectCurrent\RevengersProjectCurrent\RevengerProject3\RevengerProject3\obj\Debug\netcoreapp3.1\RevengerProject3.Properties.Resources.resources
-C:\Users\dalto\Documents\GitHub\RevengersProjectCurrent\RevengersProjectCurrent\RevengerProject3\RevengerProject3\obj\Debug\netcoreapp3.1\RevengerProject3.Rules.resources
-C:\Users\dalto\Documents\GitHub\RevengersProjectCurrent\RevengersProjectCurrent\RevengerProject3\RevengerProject3\obj\Debug\netcoreapp3.1\RevengerProject3.StartUpMenu.resources
-C:\Users\dalto\Documents\GitHub\RevengersProjectCurrent\RevengersProjectCurrent\RevengerProject3\RevengerProject3\obj\Debug\netcoreapp3.1\RevengerProject3.csproj.GenerateResource.cache
-C:\Users\dalto\Documents\GitHub\RevengersProjectCurrent\RevengersProjectCurrent\RevengerProject3\RevengerProject3\obj\Debug\netcoreapp3.1\RevengerProject3.AssemblyInfoInputs.cache
-C:\Users\dalto\Documents\GitHub\RevengersProjectCurrent\RevengersProjectCurrent\RevengerProject3\RevengerProject3\obj\Debug\netcoreapp3.1\RevengerProject3.AssemblyInfo.cs
-C:\Users\dalto\Documents\GitHub\RevengersProjectCurrent\RevengersProjectCurrent\RevengerProject3\RevengerProject3\obj\Debug\netcoreapp3.1\RevengerProject3.dll
-C:\Users\dalto\Documents\GitHub\RevengersProjectCurrent\RevengersProjectCurrent\RevengerProject3\RevengerProject3\obj\Debug\netcoreapp3.1\RevengerProject3.pdb
